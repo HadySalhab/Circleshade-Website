@@ -1,0 +1,28 @@
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-grey-dark-4: rgb(44, 44, 44);
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #707070;
+$color-black: #000;
+
+$color-brown-dark-1: #54483a;
+$color-brown-dark-2: #6d5d4b;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+html {
+	font-size: 62.5%;
+}
