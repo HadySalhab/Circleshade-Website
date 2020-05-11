@@ -1,0 +1,62 @@
+.events {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-gap: 3rem;
+	padding: 1rem 0;
+}
+
+.event {
+	background-color: white;
+	display: flex;
+	height: 25rem;
+	overflow: hidden;
+	box-shadow: 1px 2px 2px 2px rgba($color-primary, 0.1);
+
+	&__img {
+		flex-basis: 60%;
+		width: 100%;
+
+		&--1 {
+			background: url("../img/birthday.jpg") left 25% center / cover no-repeat;
+		}
+		&--2 {
+			background: url("../img/mr-mrs.jpg") left 35% center / cover no-repeat;
+		}
+		&--3 {
+			background: url("../img/valentine.jpg") left 35% center / cover no-repeat;
+		}
+		&--4 {
+			background: url("../img/new-born.jpg") left 35% center / cover no-repeat;
+		}
+		&--5 {
+			background: url("../img/openings.jpg") left 35% center / cover no-repeat;
+			&::before {
+				content: "";
+				display: block;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($color-primary, 0.3);
+			}
+		}
+		&--6 {
+			background: url("../img/new-year.jpg") left 35% center / cover no-repeat;
+		}
+	}
+	&__info {
+		flex-basis: 40%;
+		padding-top: 4rem;
+		text-align: center;
+	}
+	&__title {
+		font-size: 2.5rem;
+		color: $color-brown-dark-1;
+		font-weight: 400;
+	}
+	&__paragraph {
+		width: 50%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+}
