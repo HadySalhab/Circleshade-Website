@@ -4,7 +4,7 @@
 	"description": "Landing Page For Circle Shade",
 	"main": "index.js",
 	"scripts": {
-		"watch:sass": "node-sass sass/main.scss css/style.css -w",
+		"sass": "node-sass -w sass/main.scss dist/css/style.css --recursive",
 		"devserver": "live-server",
 		"start": "npm-run-all --parallel devserver watch:sass",
 		"compile:sass": "node-sass sass/main.scss css/style.comp.css",

@@ -32,16 +32,8 @@ html {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.bottom-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2rem;
-  width: 100%;
-  color: #fc8fb9; }
-
 .container {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden; }
@@ -58,7 +50,8 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 10rem;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif; }
   .heading-primary--sub {
     display: block;
     font-size: 2.3rem;
@@ -78,8 +71,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f9f7f6;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-bottom: 2px solid #d4bd9f;
   position: fixed;
   width: 100%;
   z-index: 1; }
@@ -93,7 +86,7 @@ body {
     display: inline-block;
     font-size: 2rem;
     font-weight: 400;
-    color: #333;
+    color: #54483a;
     text-transform: uppercase; }
 
 .about {
@@ -117,7 +110,8 @@ body {
     border-radius: 2px;
     z-index: 10; }
   .about__info {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    max-width: 80%; }
 
 .section-about {
   padding: 6rem 0;
@@ -127,10 +121,39 @@ body {
     display: block;
     width: 50%;
     height: 100%;
-    background-color: rgba(235, 230, 162, 0.4);
+    background-color: rgba(212, 189, 159, 0.4);
     top: 0%;
     left: 50%;
     position: absolute; }
+
+.section-features {
+  background-color: white;
+  padding: 6rem 0; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start; }
+
+.feature {
+  width: auto;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  .feature__heading {
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #2c2c2c;
+    font-family: "Josefin Sans", sans-serif; }
+  .feature__icon {
+    fill: #d4bd9f;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2; }
+  .feature__text {
+    font-size: 1.7rem; }
 
 .header {
   background-image: url("../img/showcase.jpg");
@@ -151,4 +174,4 @@ body {
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(212, 189, 159, 0.1); }
