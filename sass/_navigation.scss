@@ -4,15 +4,26 @@
 	align-items: center;
 	padding: 1rem 2rem;
 	background-color: white;
-	border-bottom: 2px solid $color-primary;
+	border-bottom: 2px solid $color-gold-metalic;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+	@media only screen and (max-width: $bp-sm) {
+		flex-wrap: wrap;
+	}
 	&__logo {
 		width: 10rem;
+		@media only screen and (max-width: $bp-sm) {
+			display: block;
+			margin-left: -2.5rem;
+			margin-bottom: 1rem;
+		}
 	}
 	&__list {
 		display: flex;
+		@media only screen and (max-width: $bp-sm) {
+			flex: 0 0 100%;
+		}
 	}
 
 	&__item {
@@ -26,6 +37,18 @@
 			font-weight: 400;
 			color: $color-brown-dark-1;
 			text-transform: uppercase;
+			padding: 0.5rem 1rem;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+			color: white;
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+			transform: translateY(-2px);
+		}
+		&:active {
+			box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+			transform: translateY(0);
 		}
 	}
 }

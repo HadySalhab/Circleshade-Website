@@ -8,10 +8,17 @@ $color-black: #000;
 
 $color-primary: #d4bd9f;
 $color-primary-dark: #b28451;
-$color-brown-dark-1: #54483a;
+$color-brown-dark-1: #7c6d5b;
 $color-brown-dark-2: #6d5d4b;
-$color-secondary: #101d2c;
+$color-brown-dark-3: #35302a;
+$color-secondary: #050b13;
+$color-gold-metalic: #d4af37;
 
+// RESPONSIVE BREAKPOINTS
+
+$bp-lg: 75em; // normal 1200
+$bp-md: 48em; // tablet 768
+$bp-sm: 32em; // phone 500
 *,
 *::after,
 *::before {
@@ -28,4 +35,7 @@ li {
 
 html {
 	font-size: 62.5%;
+	@media only screen and (max-width: $bp-lg) {
+		font-size: 50%;
+	}
 }

@@ -1,0 +1,65 @@
+.contact {
+	&__container {
+		display: flex;
+		@media only screen and (max-width: $bp-sm) {
+			display: block;
+		}
+	}
+	&__form {
+		flex: 0 0 50%;
+	}
+	&__details {
+		flex: 0 0 50%;
+		margin-left: 3rem;
+		position: relative;
+		@media only screen and (max-width: $bp-sm) {
+			margin-left: 0rem;
+		}
+	}
+
+	&__title {
+		font-size: 3rem;
+		color: $color-brown-dark-2;
+	}
+	&__icon {
+		fill: $color-brown-dark-2;
+		width: 4.5rem;
+		height: 4.5rem;
+		margin-right: 1.5rem;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-top: 2rem;
+		color: $color-brown-dark-3;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	&__text {
+		color: $color-brown-dark-2;
+		margin-top: 1.5rem;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	&__media {
+		&-container {
+			border-top: 1px solid $color-grey-light-1;
+			margin-top: 2rem;
+			padding-top: 1rem;
+		}
+		&-item {
+			display: inline-block;
+			margin-top: 1rem;
+		}
+		&-icon {
+			fill: $color-brown-dark-2;
+			width: 4.5rem;
+			height: 4.5rem;
+			margin-right: 1.5rem;
+
+			&:hover {
+				fill: $color-brown-dark-1;
+			}
+		}
+	}
+}
