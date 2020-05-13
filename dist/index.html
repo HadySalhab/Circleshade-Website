@@ -392,7 +392,12 @@
 			<section id="contact" class="section-contact">
 				<div class="container contact__container">
 					<div class="contact__form">
-						<form class="form">
+						<form
+							class="form"
+							method="POST"
+							data-netlify="true"
+							data-netlify-recaptcha="true"
+						>
 							<h2 class="contact__title">
 								Send Us A Message
 							</h2>
@@ -411,6 +416,9 @@
 									name="message"
 									id="message"
 								></textarea>
+								<div class="u-margin-top-vsmall">
+									<div data-netlify-recaptcha="true"></div>
+								</div>
 							</div>
 							<button type="submit" class="form__button">Submit</button>
 						</form>
